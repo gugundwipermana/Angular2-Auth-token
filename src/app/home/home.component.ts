@@ -5,8 +5,6 @@ import { UserService }				from '../_services/user.service';
 
 @Component({
 	template: `<h3>Home</h3>
-	<p><a [routerLink]="['/users']">Users</a></p>
-	<p><a [routerLink]="['/login']">Logout</a></p>
 	`,
 	styles: [`
 
