@@ -1,1 +1,74 @@
 /* You can add global styles to this file, and also import other style files */
+
+table {
+	background-color: #efefef;
+	border-radius: 3px;
+}
+
+table tr {
+	background-color: #ddd;
+	color: #333;
+}
+
+table tr th {
+	background-color: #ee9999;
+	color: #ee0000;
+}
+
+table tr td, table tr th {
+	padding: 7px;
+}
+
+a {
+	text-decoration: none;
+	color: #333;
+}
+
+.btn-gdp {
+	text-decoration: none;
+	color: white;
+	cursor: pointer;
+
+	padding: 3px;
+	margin: 5px;
+	border: 1px solid #ee8888;
+	border-radius: 3px;
+	background-color: #ee7777;
+}
+
+.btn-gdp:hover {
+	background-color: #ee9999;
+}
+
+input {
+	text-decoration: none;
+	color: #333;
+	cursor: pointer;
+
+	padding: 3px;
+	margin: 5px;
+	border: 2px solid #ee8888;
+	border-radius: 3px;
+	background-color: #eecccc;
+
+	height: 23px;
+	width: 200px;
+}
+
+#nav-mobile.right {
+	padding-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+    padding: 5px 20px 5px 20px;
+
+    border-right: 1px solid #999;
+}

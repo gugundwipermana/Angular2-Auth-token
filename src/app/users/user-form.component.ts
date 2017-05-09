@@ -10,7 +10,7 @@ import { UserService } from '../_services/user.service';
   selector: 'app-user-form',
   template: `
     <h2>{{ title }}</h2>
-    <p><a routerLink="/users" routerLinkActive="active"><< Back</a></p>
+    <p><a routerLink="/users" routerLinkActive="active" class="btn-gdp"><< Back</a></p>
     <form [formGroup]="form" (ngSubmit)="save()">
 
       <input id="id" type="hidden"
@@ -35,7 +35,7 @@ import { UserService } from '../_services/user.service';
       !form.controls['name'].valid" placeholder="Name" style="margin-bottom:5px">
       <br/>
 
-      <button type="submit" [disabled]="!form.valid">
+      <button type="submit" [disabled]="!form.valid" class="btn-gdp">
         Submit
       </button>
     </form>

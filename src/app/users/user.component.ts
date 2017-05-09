@@ -4,16 +4,18 @@ import { User }						from '../_models/user';
 import { UserService }				from '../_services/user.service';
 
 @Component({
+	selector: 'app-user-list',
 	template: `<h3>Users</h3>
-		<p><a routerLink="/users/new" routerLinkActive="active">Add</a></p>
+		<p><a routerLink="/users/new" routerLinkActive="active" class="btn-gdp">Add</a></p>
 
-		<p>Displaying {{ users.length }} users</p>
+		<p>Displaying <strong>{{ users.length }}</strong> users</p>
 
 		<table>
 			<thead>
 				<tr>
 					<th>Name</th>
 					<th>Email</th>
+					<th>Password</th>
 					<th>Edit</th>
 					<th>Delete</th>
 				</tr>
@@ -22,18 +24,19 @@ import { UserService }				from '../_services/user.service';
 				<tr *ngFor="let user of users">
 					<td>{{ user.name }}</td>
 					<td>{{ user.email }}</td>
+					<td>{{ user.password }}</td>
 					<td>
-						<a [routerLink]="['/users', user.id]">Edit</a>
+						<a [routerLink]="['/users', user.id]" class="btn-gdp">Edit</a>
 					</td>
 					<td>
-						<a (click)="deleteUser(user)">Delete</a>
+						<a (click)="deleteUser(user)" class="btn-gdp">Delete</a>
 					</td>
 				</tr>
 			</tbody>
 		</table>
 	`,
 	styles: [`
-
+		
 	`]
 })
 
